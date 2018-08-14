@@ -11,18 +11,18 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Scraper for stock data from Yahoo finance webpage}
   spec.description   = %q{Scrapes data and instantiates dynamic objects with information on stocks}
-  spec.homepage      = "https://finance.yahoo.com/trending-tickers/"
-  #Need to put in a real website.  Would like to test with ./bin/console
+  spec.homepage      = "https://github.com/hkato4188/stock_scraper"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+  # if spec.respond_to?(:metadata)
+  #   spec.metadata["allowed_push_host"] = 'http://mygemserver.com'
+  # else
+  #   raise "RubyGems 2.0 or newer is required to protect against " \
+  #     "public gem pushes."
+  # end
+
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
@@ -35,5 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "pry"
-  spec.add_dependency "nokogiri"
+  spec.add_dependency "nokogiri", "~> 1.8.2"
 end
