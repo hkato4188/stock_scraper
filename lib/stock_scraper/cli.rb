@@ -48,3 +48,7 @@ class StockScraper::CLI
   end
 
 end
+
+def show_stocks
+  StockScraper::CLI.new.call
+end

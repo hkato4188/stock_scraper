@@ -4,4 +4,4 @@ require './lib/stock_scraper'
 # require "bundler/setup"
 # require "stock_scraper"
 
-StockScraper::CLI.new.call
+show_stocks
