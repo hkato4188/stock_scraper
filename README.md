@@ -6,11 +6,12 @@ The information called upon is provided in real time.
 
 ## Installation
 
-    $ gem install stock_scraper
+    $ `gem install stock_scraper`
 
 ## Usage
 
-    Type in StockScraper and follow the on screen prompts.
+    Type in require 'stock_scraper'
+    Type in `show_stocks` and follow the on screen prompts.
 
 ## Development
 
