@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
-require './lib/stock_scraper'
+require_relative '../lib/stock_scraper'
 # require "bundler/setup"
 # require "stock_scraper"
 
-show_stocks
+#show_stocks
+StockScraper::CLI.new.call
